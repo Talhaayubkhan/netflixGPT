@@ -12,7 +12,7 @@ const Header = () => {
   const handleSignOut = () => {
     signOut(auth)
       .then(() => {
-        navigate("/");
+        navigate("/login");
         dispatch(removeUser());
       })
       .catch((error) => {
