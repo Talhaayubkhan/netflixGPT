@@ -1,18 +1,19 @@
-import { signOut } from "firebase/auth";
+import { onAuthStateChanged, signOut } from "firebase/auth";
 import { auth } from "../utils/firebase";
 import { useDispatch, useSelector } from "react-redux";
-import { removeUser } from "../utils/userSlice";
+import { addUser, removeUser } from "../utils/userSlice";
 import { useNavigate } from "react-router-dom";
 import { NETFLIX_LOGO_URL } from "../utils/constant";
+import { useEffect } from "react";
 
 const Header = () => {
-  const navigate = useNavigate();
   const dispatch = useDispatch();
+  const navigate = useNavigate();
+
   const user = useSelector((state) => state.user);
   const handleSignOut = () => {
     signOut(auth)
       .then(() => {
-        navigate("/login");
         dispatch(removeUser());
       })
       .catch((error) => {
@@ -20,6 +21,30 @@ const Header = () => {
         console.log(error);
       });
   };
+
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
+      if (user) {
+        const { uid, email, displayName, photoURL } = user;
+        dispatch(
+          addUser({
+            uid: uid,
+            email: email,
+            displayName: displayName,
+            photoURL: photoURL,
+          })
+        );
+        navigate("/browse");
+        // ...
+      } else {
+        // User is signed out
+        dispatch(removeUser());
+        navigate("/login");
+      }
+    });
+
+    return () => unsubscribe();
+  }, []);
 
   return (
     <div className="w-screen absolute px-10 py-4 z-10 bg-gradient-to-b from-black flex justify-between items-center">
