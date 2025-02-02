@@ -4,6 +4,9 @@ export const NETFLIX_LOGO_URL =
 export const USER_PROFILE_URL =
   "https://wallpapers.com/images/hd/netflix-profile-pictures-1000-x-1000-qo9h82134t9nv0j0.jpg";
 
+export const NETFLIX_PLAY_ICON =
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLTzmTtKSIrcfMdx35walJohr_MwdTLEY4gw&s";
+
 export const API_OPTIONS = {
   method: "GET",
   headers: {
