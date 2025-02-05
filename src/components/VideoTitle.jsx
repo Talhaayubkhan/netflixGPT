@@ -1,27 +1,28 @@
-import { NETFLIX_PLAY_ICON } from "../utils/constant";
+import { NETFLIX_INFO_ICON, NETFLIX_PLAY_ICON } from "../utils/constant";
 
 function VideoTitle({ title, overview, realeseDate }) {
   return (
-    <div className="w-screen aspect-video pt-[15%] px-6 md:px-20 absolute text-white bg-gradient-to-r from-black">
+    <div className="w-screen aspect-video pt-[12%] px-5 md:px-30 absolute text-white bg-gradient-to-r from-black">
       <h1 className="text-2xl md:text-6xl font-bold"> {title}</h1>
-      <p className="text-xl font-semibold text-white w-[45rem] py-5">
+      <p className="text-xl font-semibold text-white w-[35rem] py-5">
         {overview}
       </p>
       <p className="text-lg font-semibold text-white">
         Realease Date: {realeseDate}
       </p>
 
-      <div className="flex space-x-4 py-6 cursor-pointer">
-        <button className="bg-white text-black px-13 rounded-lg hover:bg-opacity-80">
-          <img
-            src={NETFLIX_PLAY_ICON}
-            alt="play_icon"
-            className="w-10 h-10 inline-block"
-          />
+      <div className="flex space-x-4 py-6">
+        <button className="bg-white text-black px-7 py-2 rounded-lg hover:bg-opacity-50 flex items-center justify-center space-x-2">
+          <img src={NETFLIX_PLAY_ICON} alt="play_icon" className="w-8 h-8" />
           <span className="font-bold text-xl">Play</span>
         </button>
-        <button className="bg-gray-500 text-white p-4 px-12 text-xl bg-opacity-50 rounded-lg">
-          More Info
+        <button className="bg-gray-500 text-black px-6 py-2 text-lg bg-opacity-50 rounded-lg flex items-center justify-center">
+          <img
+            src={NETFLIX_INFO_ICON}
+            alt="info_icon"
+            className="w-8 h-8 text-white"
+          />
+          <span className="font-bold text-xl px-2">More Info</span>
         </button>
       </div>
     </div>
