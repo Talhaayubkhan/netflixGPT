@@ -6,10 +6,10 @@ const MainVideoContainer = () => {
   const movies = useSelector((state) => state.movies?.nowPlayingMovie);
   if (!movies) return; // Early return (if movies is null, return early)
 
-  const mainMovies = movies[0];
-  console.log(mainMovies);
+  const mainMovie = movies[0];
+  console.log(mainMovie);
 
-  const { original_title, overview, release_date, id } = mainMovies;
+  const { original_title, overview, release_date, id } = mainMovie;
 
   return (
     <div>
