@@ -7,7 +7,7 @@ const MainVideoContainer = () => {
   if (!movies) return; // Early return (if movies is null, return early)
 
   const mainMovie = movies[0];
-  console.log(mainMovie);
+  // console.log(mainMovie);
 
   const { original_title, overview, release_date, id } = mainMovie;
 

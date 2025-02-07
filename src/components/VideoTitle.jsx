@@ -12,9 +12,9 @@ function VideoTitle({ title, overview, realeseDate }) {
       </p>
 
       <div className="flex space-x-6 py-6">
-        <button className="bg-white text-black px-8 py-2 rounded-lg hover:bg-opacity-50 flex items-center justify-center space-x-2">
+        <button className="bg-white text-black px-8 py-2 rounded-lg flex items-center justify-center space-x-2">
           <img src={NETFLIX_PLAY_ICON} alt="play_icon" className="w-8 h-8" />
-          <span className="font-bold text-xl">Play</span>
+          <span className="font-bold text-xl hover:bg-opacity-50">Play</span>
         </button>
         <button className="bg-gray-500 text-black px-4 py-2 text-lg bg-opacity-50 rounded-lg flex items-center justify-center">
           <img

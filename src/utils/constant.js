@@ -10,6 +10,8 @@ export const NETFLIX_PLAY_ICON =
 export const NETFLIX_INFO_ICON =
   "https://www.pngplay.com/wp-content/uploads/7/More-Info-Button-PNG-HD-Quality.png";
 
+export const IMG_CDN_URL = "https://image.tmdb.org/t/p/w300";
+
 export const API_OPTIONS = {
   method: "GET",
   headers: {

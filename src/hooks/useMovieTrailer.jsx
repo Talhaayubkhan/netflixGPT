@@ -8,6 +8,7 @@ const useMovieTrailer = (movieId) => {
 
   // Fetching the movie trailer from the API
   const getMovieTrailer = async () => {
+    // the Api was dynamically loaded
     const data = await fetch(
       "https://api.themoviedb.org/3/movie/" +
         movieId +
@@ -20,7 +21,7 @@ const useMovieTrailer = (movieId) => {
 
     const filterData = json.results.filter((v) => v.type === "Trailer");
     const trailer = filterData.length ? filterData[0] : json.results[0];
-    //      (trailer);
+    // console.log(trailer);
     dispatch(addTrailerMovie(trailer));
   };
 
