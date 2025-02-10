@@ -12,6 +12,9 @@ export const NETFLIX_INFO_ICON =
 
 export const IMG_CDN_URL = "https://image.tmdb.org/t/p/w300";
 
+export const NETFLIX_BACKGROUND_IMG =
+  "https://assets.nflxext.com/ffe/siteui/vlv3/7a8c0067-a424-4e04-85f8-9e25a49a86ed/web/PK-en-20250120-TRIFECTA-perspective_132ec7cb-f8cf-4633-92d4-c99629cac9a3_large.jpg";
+
 export const API_OPTIONS = {
   method: "GET",
   headers: {
@@ -20,3 +23,10 @@ export const API_OPTIONS = {
       "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyNmM3MTUzZWI2ZDhlYTM0NzVmMDNkNTUzMzQxNTFlNiIsIm5iZiI6MTczODI1ODkwMC43OTksInN1YiI6IjY3OWJiOWQ0YjIzNjI5ZTdmOGZiZTdlYiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.c94khYqEwc6JlMdeUwm6u9B0epqF7R0wNJxFcpLh6hE",
   },
 };
+
+export const SUPPORTED_LANGUAGES = [
+  { id: 1, identifier: "pash", name: "Pashto" },
+  { id: 2, identifier: "es", name: "Español" },
+  { id: 3, identifier: "ur", name: "Urdu" },
+  { id: 4, identifier: "en", name: "English" },
+];

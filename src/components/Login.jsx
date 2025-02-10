@@ -9,7 +9,7 @@ import {
 import { auth } from "../utils/firebase";
 import { addUser } from "../utils/userSlice";
 import { useDispatch } from "react-redux";
-import { USER_PROFILE_URL } from "../utils/constant";
+import { NETFLIX_BACKGROUND_IMG, USER_PROFILE_URL } from "../utils/constant";
 
 const Login = () => {
   const [isSigninForm, setIsSigninForm] = useState(true);
@@ -99,10 +99,7 @@ const Login = () => {
     <div>
       <Header />
       <div className="absolute">
-        <img
-          alt="background-img"
-          src="https://assets.nflxext.com/ffe/siteui/vlv3/7a8c0067-a424-4e04-85f8-9e25a49a86ed/web/PK-en-20250120-TRIFECTA-perspective_132ec7cb-f8cf-4633-92d4-c99629cac9a3_large.jpg"
-        />
+        <img alt="background-img" src={NETFLIX_BACKGROUND_IMG} />
       </div>
 
       <form
