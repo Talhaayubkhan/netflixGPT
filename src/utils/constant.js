@@ -25,8 +25,8 @@ export const API_OPTIONS = {
 };
 
 export const SUPPORTED_LANGUAGES = [
-  { id: 1, identifier: "pash", name: "Pashto" },
-  { id: 2, identifier: "es", name: "Español" },
-  { id: 3, identifier: "ur", name: "Urdu" },
-  { id: 4, identifier: "en", name: "English" },
+  { id: 1, identifier: "en", name: "English" },
+  { id: 2, identifier: "pash", name: "Pashto" },
+  { id: 3, identifier: "es", name: "Español" },
+  { id: 4, identifier: "ur", name: "Urdu" },
 ];

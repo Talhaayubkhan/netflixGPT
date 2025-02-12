@@ -14,7 +14,7 @@ const GPTSearchBar = () => {
             lang[changeLanguageKey]?.gptSearchPlaceholder || "Search..."
           }
         />
-        <button className="px-4 m-4 col-span-3 bg-red-800 text-black cursor-pointer font-bold text-2xl rounded-lg">
+        <button className="px-4 m-4 col-span-3 bg-red-800 text-white cursor-pointer font-bold text-2xl rounded-lg">
           {lang[changeLanguageKey]?.search || "Search"}
         </button>
       </form>

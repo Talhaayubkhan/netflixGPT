@@ -74,7 +74,7 @@ const Header = () => {
         <div className="flex items-center space-x-4">
           {showGPTSearch && (
             <select
-              className="text-white p-2 bg-black"
+              className="text-black bg-white p-2 rounded-lg"
               onChange={handleLanguageChnage}
             >
               {SUPPORTED_LANGUAGES.map((lan) => (
@@ -85,7 +85,7 @@ const Header = () => {
             </select>
           )}
           <button
-            className="bg-white text-black font-bold px-4 py-2 cursor-pointer rounded-md"
+            className="bg-white text-black font-bold text-xl px-4 py-2 cursor-pointer rounded-md"
             onClick={hnadleGPTSearchClick}
           >
             {showGPTSearch ? "Home Page" : "Search GPT"}
@@ -94,7 +94,7 @@ const Header = () => {
           <img src={user?.photoURL} alt="profile-icon" className="w-10 h-10" />
           <button
             onClick={handleSignOut}
-            className="bg-red-600 text-black px-4 py-2 shadow-xl cursor-pointer rounded-md"
+            className="bg-red-600 text-black text-xl  font-bold px-4 py-2 shadow-xl cursor-pointer rounded-md"
           >
             Sign Out
           </button>
