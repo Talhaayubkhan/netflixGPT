@@ -26,3 +26,6 @@ dist-ssr
 
 # Firebase
 src/utils/firebase
+
+# open ai secret key
+.env
