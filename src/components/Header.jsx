@@ -5,7 +5,10 @@ import { addUser, removeUser } from "../utils/userSlice";
 import { useNavigate } from "react-router-dom";
 import { NETFLIX_LOGO_URL, SUPPORTED_LANGUAGES } from "../utils/constant";
 import { useEffect } from "react";
-import { toggleGPTSearchView } from "../utils/GPTSlice";
+import {
+  clearGeminiMoviesResult,
+  toggleGPTSearchView,
+} from "../utils/GPTSlice";
 import { changeLanguage } from "../utils/languageSlice";
 
 const Header = () => {
@@ -54,6 +57,7 @@ const Header = () => {
   };
   const hnadleGPTSearchClick = () => {
     dispatch(toggleGPTSearchView(true));
+    dispatch(clearGeminiMoviesResult());
   };
 
   const handleLanguageChnage = (e) => {
