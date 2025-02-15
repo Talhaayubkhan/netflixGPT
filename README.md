@@ -7,6 +7,8 @@ Discover movies in a whole new way! With NetflixGPT, you can simply describe wha
 ## Features ✨
 
 - 🔎 **Get Movie Suggestions by Description** – Can't remember a title? Just describe it, and Gemini API will suggest relevant movies.
+- 🌍 **Multi-Language Support** – Search input and button text dynamically adapt when switching languages like Urdu, Spanish, and more.
+- 🔑 **Firebase Authentication** – Secure user authentication for sign-in/sign-out functionality.
 - 🗂 **State Management with Redux** – Efficiently manage and store movie data using React Redux.
 - 📽️ **Netflix-Inspired UI** – Dynamic background videos and interactive movie sections.
 - 📌 **Seamless User Experience** – Powered by modern UI/UX with Tailwind CSS and React Router.
@@ -22,7 +24,9 @@ Discover movies in a whole new way! With NetflixGPT, you can simply describe wha
 - **React Redux** 📦 – State management for storing API data.
 - **Google Gemini API** 🤖 – AI-powered movie recommendations.
 - **TMDB API** 🎬 – Fetching movie details and metadata.
+- **Firebase Authentication** 🔐 – Secure login and authentication.
 - **Tailwind CSS** 🎨 – Styling for a sleek UI.
+- **Multi-Language Support** 🌍 – Enables real-time text adaptation for search input and buttons.
 
 ---
 
@@ -64,6 +68,7 @@ Ensure you have the following installed:
    ```env
    VITE_TMDB_API_KEY=your_tmdb_api_key
    VITE_GEMINI_API_KEY=your_gemini_api_key
+   VITE_FIREBASE_API_KEY=your_firebase_api_key
    ```
 
 5. **Start the development server:**
@@ -82,6 +87,8 @@ Ensure you have the following installed:
 - **Get Movie Suggestions** – Describe a movie concept, and Gemini API will provide recommendations.
 - **Browse Movie Sections** – Movies are displayed in categorized sections with dynamic background videos.
 - **Explore Movie Details** – Click on any movie card to view its synopsis, cast, rating, and more.
+- **Multi-Language Support** – Switch languages to see the search input and button text adapt dynamically.
+- **User Authentication** – Sign in and sign out securely using Firebase authentication.
 
 ---
 
@@ -111,6 +118,8 @@ We welcome contributions! If you’d like to improve the project, follow these s
 - Built with **React, Redux, and Tailwind CSS**.
 - Uses **Google's Gemini API** for AI-powered movie recommendations.
 - Fetches movie data from **TMDB API** for accurate search results.
+- Implements **Firebase Authentication** for secure login functionality.
 - Powered by **Vite** for a fast development experience.
+- Implements **Multi-Language Support** to enhance accessibility.
 
 Enjoy discovering movies with NetflixGPT! 🚀🎬
