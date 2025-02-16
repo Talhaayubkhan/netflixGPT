@@ -17,7 +17,7 @@ function VideoBackground({ movieId }) {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         referrerPolicy="strict-origin-when-cross-origin"
         frameBorder="0"
-        allowFullScreen
+        // allowFullScreen
       ></iframe>
     </div>
   );
