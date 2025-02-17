@@ -5,7 +5,7 @@ import GPTSearchBar from "./GPTSearchBar";
 const SearchGPT = () => {
   return (
     <div>
-      <div className="fixed -z-20">
+      <div className="fixed -z-20 w-[100%]">
         <img alt="background-img" src={NETFLIX_BACKGROUND_IMG} />
       </div>
       <GPTSearchBar />

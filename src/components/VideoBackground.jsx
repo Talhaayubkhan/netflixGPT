@@ -7,7 +7,7 @@ function VideoBackground({ movieId }) {
   return (
     <div>
       <iframe
-        className="w-screen aspect-video"
+        className="w-[100%] aspect-video"
         src={
           "https://www.youtube.com/embed/" +
           trailerVideoId?.key +
