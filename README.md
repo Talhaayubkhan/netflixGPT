@@ -13,6 +13,7 @@ Discover movies in a whole new way! With NetflixGPT, you can simply describe wha
 - 📽️ **Netflix-Inspired UI** – Dynamic background videos and interactive movie sections.
 - 📌 **Seamless User Experience** – Powered by modern UI/UX with Tailwind CSS and React Router.
 - 🎥 **Movie Cards & Sections** – Movies are displayed in categorized sections fetched from TMDB API.
+- 🔄 **Optimized API Calls with Memorization** – Implemented a condition to check if data already exists in Redux store before making API calls, reducing unnecessary requests.
 
 ---
 
@@ -89,6 +90,7 @@ Ensure you have the following installed:
 - **Explore Movie Details** – Click on any movie card to view its synopsis, cast, rating, and more.
 - **Multi-Language Support** – Switch languages to see the search input and button text adapt dynamically.
 - **User Authentication** – Sign in and sign out securely using Firebase authentication.
+- **Optimized API Calls** – Uses Redux store to check for existing data before making API requests.
 
 ---
 
@@ -121,5 +123,6 @@ We welcome contributions! If you’d like to improve the project, follow these s
 - Implements **Firebase Authentication** for secure login functionality.
 - Powered by **Vite** for a fast development experience.
 - Implements **Multi-Language Support** to enhance accessibility.
+- Optimized API calls using **Redux store memorization** to improve performance.
 
 Enjoy discovering movies with NetflixGPT! 🚀🎬
